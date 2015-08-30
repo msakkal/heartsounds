@@ -16,11 +16,6 @@ function initPlayer(file, num) {
         });
 
         wavesurfer.load(file);
-        /*window.onresize = function () {
-            console.log(wavesurfer);
-            wavesurfer.drawer.containerWidth = wavesurfer.drawer.container.clientWidth;
-            wavesurfer.drawBuffer();
-        }*/
        
         wavesurfer.on("finish", function () {
             $("#playpauseicon" + num).addClass("glyphicon-play");
@@ -41,14 +36,6 @@ function initPlayer(file, num) {
     });
     players.push(wavesurfer);
 }
-
-initPlayer("audio/nh_30.mp3", "01");
-initPlayer("audio/nh_01_apex.mp3", "02");
-initPlayer("audio/nh_01_aortic.mp3", "03");
-initPlayer("audio/nh_02_pulmonic.mp3", "04");
-initPlayer("audio/nh_06_apex_insp.mp3", "06");
-initPlayer("audio/nh_06_apex_exp.mp3", "07");
-initPlayer("audio/nh_03_erb.mp3", "05");
 
 window.onresize = function () {
     var l = players.length;

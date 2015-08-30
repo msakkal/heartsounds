@@ -1,14 +1,15 @@
 ﻿<!DOCTYPE html>
 <html lang="ar-sy">
 <head>
-    <title>أصوات القلب</title>
+    <title></title>
     <meta charset="utf-8" />
-    <link href="styles/bootstrap.min.css" rel="stylesheet" />
-    <link href="styles/bootstrap-theme.min.css" rel="stylesheet" />
-    <link href="styles/contentstyle.css" rel="stylesheet" />
+    <link href="../styles/bootstrap.min.css" rel="stylesheet" />
+    <link href="../styles/bootstrap-theme.min.css" rel="stylesheet" />
+    <link href="../styles/contentstyle.css" rel="stylesheet" />
 </head>
 <body>
     <div class="container">
+        <!-- #navigation bar --> 
         <nav class="navbar navbar-default" role="navigation">
             <div class="container-fluid">
                 <!-- Brand and toggle get grouped for better mobile display -->
@@ -61,13 +62,14 @@
                 </div><!-- /.navbar-collapse -->
             </div><!-- /.container-fluid -->
         </nav>
+        <!-- #endregion -->
         <div class="row">
             <div class="col-md-1"></div>
             <div class="col-md-10" style="direction: rtl; padding: 10px;" id="contentContainer">
                 <article>
                     <h1>الأصوات القلبية</h1>
                     <section>
-                        <h3>القلب الطبيعي</h3>
+                        <h3>القلب الطبيعي: بؤرة القمة عند شخص نحيل</h3>
                         <div id="waveform01" class="waveform"></div>
                         <div id="waveformControls" class="waveformControls">
                             <button class="btn btn-default" id="playpause01">
@@ -79,7 +81,7 @@
                         </div>
                     </section>
                     <section>
-                        <h3>القلب الطبيعي: بؤرة القمة</h3>
+                        <h3>القلب الطبيعي: بؤرة القمة عند شخص بدين</h3>
                         <div id="waveform02" class="waveform"></div>
                         <div id="waveformControls" class="waveformControls">
                             <button class="btn btn-default" id="playpause02">
@@ -91,7 +93,7 @@
                         </div>
                     </section>
                     <section>
-                        <h3>القلب الطبيعي: البؤرة الأبهرية</h3>
+                        <h3>القلب الطبيعي: بؤرة القمة عند مريض بالنفاخ الرئوي</h3>
                         <div id="waveform03" class="waveform"></div>
                         <div id="waveformControls" class="waveformControls">
                             <button class="btn btn-default" id="playpause03">
@@ -103,7 +105,7 @@
                         </div>
                     </section>
                     <section>
-                        <h3>القلب الطبيعي: البؤرة الرئوية</h3>
+                        <h3>القلب الطبيعي: بؤرة القمة عند مريض بالريح الصدرية</h3>
                         <div id="waveform04" class="waveform"></div>
                         <div id="waveformControls" class="waveformControls">
                             <button class="btn btn-default" id="playpause04">
@@ -115,7 +117,7 @@
                         </div>
                     </section>
                     <section>
-                        <h3>القلب الطبيعي: بؤرة إرب</h3>
+                        <h3>القلب الطبيعي: بؤرة القمة عند مريض بالوذمة المخاطية</h3>
                         <div id="waveform05" class="waveform"></div>
                         <div id="waveformControls" class="waveformControls">
                             <button class="btn btn-default" id="playpause05">
@@ -127,7 +129,7 @@
                         </div>
                     </section>
                     <section>
-                        <h3>القلب الطبيعي: بؤرة القمة أثناء الشهيق</h3>
+                        <h3>القلب الطبيعي: بؤرة القمة في حالة الاحتشاء الحاد</h3>
                         <div id="waveform06" class="waveform"></div>
                         <div id="waveformControls" class="waveformControls">
                             <button class="btn btn-default" id="playpause06">
@@ -139,7 +141,7 @@
                         </div>
                     </section>
                     <section>
-                        <h3>القلب الطبيعي: بؤرة القمة أثناء الزفير</h3>
+                        <h3>القلب الطبيعي: بؤرة القمة في حالة فقر الدم</h3>
                         <div id="waveform07" class="waveform"></div>
                         <div id="waveformControls" class="waveformControls">
                             <button class="btn btn-default" id="playpause07">
@@ -156,30 +158,28 @@
 
             <div class="text-center">
                 <ul class="pagination">
-                    <li><a href="heartsounds/page02.html">&raquo;</a></li>
-                    <li><a href="heartsounds/page03.html">3</a></li>
-                    <li><a href="heartsounds/page02.html">2</a></li>
-                    <li class="active"><a href="#">1 <span class="sr-only">(current)</span></a></li>
-                    <li class="disabled"><a href="#">&laquo;</a></li>
+                    <li><a href="page03.html">&raquo;</a></li>
+                    <li><a href="page03.html">3</a></li>
+                    <li class="active"><a href="page02.html">2</a></li>
+                    <li><a href="../index.html">1 <span class="sr-only">(current)</span></a></li>
+                    <li><a href="../index.html">&laquo;</a></li>
                 </ul>
             </div>
         </div>
-        <footer>
-
-        </footer>
+        <footer></footer>
     </div>
-    <script src="scripts/jquery-2.1.4.min.js"></script>
-    <script src="scripts/bootstrap.min.js"></script>
-    <script src="scripts/wavesurfer.min.js"></script>
-    <script src="scripts/audioplayer.js"></script>
+    <script src="../scripts/jquery-2.1.4.min.js"></script>
+    <script src="../scripts/bootstrap.min.js"></script>
+    <script src="../scripts/wavesurfer.min.js"></script>
+    <script src="../scripts/audioplayer.js"></script>
     <script>
-        initPlayer("audio/nh_30.mp3", "01");
-        initPlayer("audio/nh_01_apex.mp3", "02");
-        initPlayer("audio/nh_01_aortic.mp3", "03");
-        initPlayer("audio/nh_02_pulmonic.mp3", "04");
-        initPlayer("audio/nh_06_apex_insp.mp3", "06");
-        initPlayer("audio/nh_06_apex_exp.mp3", "07");
-        initPlayer("audio/nh_03_erb.mp3", "05");
+        initPlayer("../audio/nh_07_apex_thin.mp3", "01");
+        initPlayer("../audio/nh_08_apex_obese.mp3", "02");
+        initPlayer("../audio/nh_12_apex_emphysema.mp3", "03");
+        initPlayer("../audio/nh_14_apex_pneumothorax.mp3", "04");
+        initPlayer("../audio/nh_15_apex_myxedema.mp3", "05");
+        initPlayer("../audio/nh_17_apex_acutemi.mp3", "06");
+        initPlayer("../audio/nh_23_anemia.mp3", "07");
     </script>
 </body>
 </html>
