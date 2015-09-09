@@ -38,9 +38,11 @@ function initPlayer(file, num) {
 }
 
 window.onresize = function () {
-    var l = players.length;
-    for (var i = 0; i < l; i++) {
-        players[i].drawer.containerWidth = players[i].drawer.container.clientWidth;
-        players[i].drawBuffer();
-    }
+    setTimeout(function () {
+        var l = players.length;
+        for (var i = 0; i < l; i++) {
+            players[i].drawer.containerWidth = players[i].drawer.container.clientWidth;
+            players[i].drawBuffer();
+        }
+    }, 0);
 }

@@ -67,7 +67,8 @@
                 <article>
                     <h1>الأصوات القلبية</h1>
                     <section>
-                        <h3>القلب الطبيعي</h3>
+                        <h3>بؤرة القمة</h3>
+                        <p>تسجيل لأصوات القلب عند شاب عمره 26 عاماً. تكون شدة الصوت الأول أعلى من شدة الصوت الثاني في بؤرة القمة في معظم الحالات.</p>
                         <div id="waveform01" class="waveform"></div>
                         <div id="waveformControls" class="waveformControls">
                             <button class="btn btn-default" id="playpause01">
@@ -79,7 +80,8 @@
                         </div>
                     </section>
                     <section>
-                        <h3>القلب الطبيعي: بؤرة القمة</h3>
+                        <h3>البؤرة الرئوية</h3>
+                        <p>أصوات القلب عند نفس الشخص السابق لكن في البؤرة الرئوية. كلا الصوتين خافتين لكن الصوت الأول أخفت من الثاني هنا.</p>
                         <div id="waveform02" class="waveform"></div>
                         <div id="waveformControls" class="waveformControls">
                             <button class="btn btn-default" id="playpause02">
@@ -91,7 +93,8 @@
                         </div>
                     </section>
                     <section>
-                        <h3>القلب الطبيعي: البؤرة الأبهرية</h3>
+                        <h3>البؤرة الأبهرية</h3>
+                        <p>نفس الشخص السابق في البؤرة الأبهرية. شدة الصوت الثاني أعلى من الأول رغم أن كليهما خافت.</p>
                         <div id="waveform03" class="waveform"></div>
                         <div id="waveformControls" class="waveformControls">
                             <button class="btn btn-default" id="playpause03">
@@ -103,7 +106,8 @@
                         </div>
                     </section>
                     <section>
-                        <h3>القلب الطبيعي: البؤرة الرئوية</h3>
+                        <h3>بؤرة إرب</h3>
+                        <p>أصوات القلب عند شاب عمره 27 عاماً كما تسمع في أسفل وأيسر القص أو ما يسمى بؤرة إرب. الصوت الأول أعلى من الثاني.</p>
                         <div id="waveform04" class="waveform"></div>
                         <div id="waveformControls" class="waveformControls">
                             <button class="btn btn-default" id="playpause04">
@@ -115,7 +119,8 @@
                         </div>
                     </section>
                     <section>
-                        <h3>القلب الطبيعي: بؤرة إرب</h3>
+                        <h3>البؤرة الرئوية</h3>
+                        <p>يبدو هنا الصوتان الأول والثاني بنفس الشدة تقريباً.</p>
                         <div id="waveform05" class="waveform"></div>
                         <div id="waveformControls" class="waveformControls">
                             <button class="btn btn-default" id="playpause05">
@@ -127,7 +132,8 @@
                         </div>
                     </section>
                     <section>
-                        <h3>القلب الطبيعي: بؤرة القمة أثناء الشهيق</h3>
+                        <h3>بؤرة القمة</h3>
+                        <p>الصوت الثاني في هذه الحالة أعلى من الصوت الأول.</p>
                         <div id="waveform06" class="waveform"></div>
                         <div id="waveformControls" class="waveformControls">
                             <button class="btn btn-default" id="playpause06">
@@ -139,7 +145,8 @@
                         </div>
                     </section>
                     <section>
-                        <h3>القلب الطبيعي: بؤرة القمة أثناء الزفير</h3>
+                        <h3>بؤرة القمة بعد الشهيق</h3>
+                        <p>دخول الهواء إلى الرئة أثناء الشهيق يزيد المسافة بين القلب وجدار الصدر، وبالتالي تخفت كل الأصوات القلبية.</p>
                         <div id="waveform07" class="waveform"></div>
                         <div id="waveformControls" class="waveformControls">
                             <button class="btn btn-default" id="playpause07">
@@ -157,6 +164,9 @@
             <div class="text-center">
                 <ul class="pagination">
                     <li><a href="heartsounds/page02.html">&raquo;</a></li>
+                    <li><a href="heartsounds/page06.html">6</a></li>
+                    <li><a href="heartsounds/page05.html">5</a></li>
+                    <li><a href="heartsounds/page04.html">4</a></li>
                     <li><a href="heartsounds/page03.html">3</a></li>
                     <li><a href="heartsounds/page02.html">2</a></li>
                     <li class="active"><a href="#">1 <span class="sr-only">(current)</span></a></li>
@@ -173,13 +183,13 @@
     <script src="scripts/wavesurfer.min.js"></script>
     <script src="scripts/audioplayer.js"></script>
     <script>
-        initPlayer("audio/nh_30.mp3", "01");
-        initPlayer("audio/nh_01_apex.mp3", "02");
-        initPlayer("audio/nh_01_aortic.mp3", "03");
-        initPlayer("audio/nh_02_pulmonic.mp3", "04");
-        initPlayer("audio/nh_06_apex_insp.mp3", "06");
-        initPlayer("audio/nh_06_apex_exp.mp3", "07");
-        initPlayer("audio/nh_03_erb.mp3", "05");
+        initPlayer("audio/01_apex.mp3", "01");
+        initPlayer("audio/01_pulmonic.mp3", "02");
+        initPlayer("audio/01_aortic.mp3", "03");
+        initPlayer("audio/02_erb.mp3", "04");
+        initPlayer("audio/02_pulmonic.mp3", "05");
+        initPlayer("audio/03_apex.mp3", "06");
+        initPlayer("audio/04_apex_insp.mp3", "07");
     </script>
 </body>
 </html>
